@@ -1,0 +1,10 @@
+import boto3
+
+try:
+    s3RDS = boto3.resource('s3')
+    rdsBucket = s3RDS.Bucket("snowflake-source-data")
+    print("CHECK", rdsBucket)
+    for rdsObj in rdsBucket.objects.all():
+        print("OBJECTS", rdsObj)
+except Exception as e:
+    print("E", e)

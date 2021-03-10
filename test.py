@@ -1,0 +1,2 @@
+path= "DELTA=s3a://clumio-045303117942-eng-15-uw-2-uw-2/rds/883863842359/uw-2/instance-clumio-mysql-krdatabase-3/2020-11-12/a45c96ea-247a-11eb-ae6d-1a9201bb4c6e/clumio-export-s3-task-t2770308-org61/sales/sales.sales_orders/,s3a://clumio-045303117942-eng-15-uw-2-uw-2/rds/883863842359/uw-2/instance-clumio-mysql-krdatabase-3/2020-11-13/d1298632-2543-11eb-ae6d-1a9201bb4c6e/clumio-export-s3-task-t2773414-org61/sales/sales.sales_orders/"
+print("s3a://clumio-psa/Incremental/"+ path.split("=")[1].split(",")[1].split("/")[-2].rstrip())
